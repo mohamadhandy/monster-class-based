@@ -30,3 +30,7 @@
 9. Kalau di CRA (react-scripts build) kalau di vite (vite build). React menggunakan skrip build untuk memastikan bahwa proyek yang telah selesai dibundel (dibungkus), diperkecil, dan dioptimalkan untuk keperluan deployment supaya orang lain bisa akses aplikasi react menggunakan internet.
 10. react-scripts test itu watch mode interaktif test runner menggunakan jest untuk keperluan test sesuatu yang spesifik. Jika ditanya kasih contoh aja yang model button itu ke render di page tersebut atau enggak.
 11. component di react adalah bagian bagian kode yang mengembalikan (me-return) tampilan UI.
+
+# <span style="color: cyan;">React Class Base Components</span> 🔥🔥
+
+1. State harus di taro di dalam constructor.
