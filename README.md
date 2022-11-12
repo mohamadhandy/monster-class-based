@@ -10,7 +10,7 @@
 4. (Kalau ditanya apa itu DOM) DOM adalah Document Object Model, ini yang digunakan browser untuk menampilkan website.
 5. (Kalau ditanya React itu imperative atau deklaratif?) react itu deklaratif. Kalau imperative, kita sebagai developer yang langsung update DOMnya. Kalau react enggak, react itu deklaratif karena react hanya butuh deklarasi tampilan aplikasinya seperti apa, untuk manipulasi DOM itu sudah urusan react. Cara mendeklarasikan tampilan aplikasinya seperti apa yaitu menggunakan state.
 6. apa itu state pada react? State adalah wadah (object) untuk menyimpan data yang akan di render atau muat ulang ketika ada perubahan data.
-7. Kelebihan React component based. Membuat tampilan di susun berdasarkan component. Component dibuat berdasarkan state menggunakan syntax JSX. JSX adalah ekstensi sintaks JavaScript gunanya untuk membuat component tadi.
+7. Kelebihan React component based. Membuat tampilan di susun berdasarkan component. Component dibuat berdasarkan state menggunakan syntax JSX. JSX adalah ekstensi sintaks JavaScript (facebook nambahin fungsionalitasnya javascript untuk bisa di padukan dengan html) gunanya untuk membuat component tadi.
 8. Component itu bisa dalam bentuk Function atau Class.
 9. Perpaduan antara state dan components akan dibuatkan secara otomatis oleh react yang bernama virtual dom.
 10. Apa itu virtual dom? Virtual dom merupakan alat bantu yang digunakan oleh react untuk manipulasi aktual dom dengan cara membandingkan 2 dom sehingga react tau mana aja yang harus di manipulasi dan yang tidak. Kemudian react akan mengupdate aktual dom setelah react tau mana aja yang harus dimanipulasi. Ini namanya konsep one way data flow.
@@ -29,3 +29,4 @@
 8. Kalau misalkan di luar id root, di tambahin tag html pada index.htmlnya apakah itu valid? Ya Valid. Tapi tag tersebut di luar react application. Masih bisa running tag tersebut di luar id root pada index.html
 9. Kalau di CRA (react-scripts build) kalau di vite (vite build). React menggunakan skrip build untuk memastikan bahwa proyek yang telah selesai dibundel (dibungkus), diperkecil, dan dioptimalkan untuk keperluan deployment supaya orang lain bisa akses aplikasi react menggunakan internet.
 10. react-scripts test itu watch mode interaktif test runner menggunakan jest untuk keperluan test sesuatu yang spesifik. Jika ditanya kasih contoh aja yang model button itu ke render di page tersebut atau enggak.
+11. component di react adalah bagian bagian kode yang mengembalikan (me-return) tampilan UI.
