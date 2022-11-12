@@ -10,6 +10,10 @@ class App extends Component {
     this.state = {
       name: 'Mohamad',
     };
+    this.human = {
+      age: 90,
+      name: 'Alien',
+    };
   }
   render() {
     return (
@@ -28,7 +32,7 @@ class App extends Component {
           <p>Hi {this.state.name}</p>
         </div>
         <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
+          Hello there {this.human.name}, you are {this.human.age} years old!
         </p>
       </div>
     );

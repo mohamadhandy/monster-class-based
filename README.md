@@ -34,3 +34,4 @@
 # <span style="color: cyan;">React Class Base Components</span> 🔥🔥
 
 1. State harus di taro di dalam constructor.
+2. Penamaan variable state bisa di sesuaikan. Baris 10 dan 13 berbeda nama dan keduanya bisa di render tepatnya di baris 32 dan 35.
