@@ -28,7 +28,15 @@ class App extends Component {
         </div>
         <h1>Vite + React</h1>
         <div className="card">
-          <button>Click here to change name</button>
+          <button
+            onClick={() => {
+              this.state.name === 'Mohamad'
+                ? this.setState({ name: 'Handy' })
+                : this.setState({ name: 'Mohamad' });
+            }}
+          >
+            Click here to change name
+          </button>
           <p>Hi {this.state.name}</p>
         </div>
         <p className="read-the-docs">
