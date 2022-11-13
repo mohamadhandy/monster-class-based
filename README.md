@@ -34,4 +34,9 @@
 # <span style="color: cyan;">React Class Base Components</span> 🔥🔥
 
 1. State harus di taro di dalam constructor.
-2. Penamaan variable state bisa di sesuaikan. Baris 10 dan 13 berbeda nama dan keduanya bisa di render tepatnya di baris 32 dan 35.
+2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 46 dan 50.
+
+## Shallow merge
+
+1. Artinya, jika suatu objek memiliki properti yang mereferensikan ke objek lain, properti objek asli dan hasil objek target akan mereferensikan objek yang sama.
+2. Pada intinya, properti dari objek pertama ditimpa dengan nilai properti yang sama dari objek kedua.
