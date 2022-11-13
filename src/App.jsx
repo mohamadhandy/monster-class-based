@@ -30,16 +30,18 @@ class App extends Component {
         <div className="card">
           <button
             onClick={() => {
-              this.state.name === 'Mohamad'
-                ? this.setState(() => ({
-                    name: 'Handy',
-                  }))
-                : this.setState(() => ({
-                    name: 'Mohamad',
-                  }));
-              this.human.name === 'Alien'
-                ? (this.human.name = 'Elephant')
-                : (this.human.name = 'Alien');
+              this.setState(
+                () => {
+                  if (this.state.name === 'Mohamad') {
+                    return { name: 'Handy' };
+                  } else {
+                    return { name: 'Mohamad' };
+                  }
+                },
+                () => {
+                  console.log(this.state.name);
+                }
+              );
             }}
           >
             Click here to change name

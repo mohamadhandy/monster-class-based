@@ -34,7 +34,9 @@
 # <span style="color: cyan;">React Class Base Components</span> 🔥🔥
 
 1. State harus di taro di dalam constructor.
-2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 48 dan 52.
+2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 50 dan 54 pada file App.jsx.
+3. setState itu apa? memberi tahu ke React bahwa suatu component perlu dirender ulang dengan state yang diperbarui.
+4. Hati-hati, setState itu asynchronous. Untuk memastikan ketika log state yang terupdate maka perlu secondary callback, seperti di baris 41 App.jsx
 
 ## Shallow merge
 
