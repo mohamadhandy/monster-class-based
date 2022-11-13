@@ -37,6 +37,9 @@ class App extends Component {
                 : this.setState(() => ({
                     name: 'Mohamad',
                   }));
+              this.human.name === 'Alien'
+                ? (this.human.name = 'Elephant')
+                : (this.human.name = 'Alien');
             }}
           >
             Click here to change name

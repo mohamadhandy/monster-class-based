@@ -34,7 +34,7 @@
 # <span style="color: cyan;">React Class Base Components</span> 🔥🔥
 
 1. State harus di taro di dalam constructor.
-2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 46 dan 50.
+2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 48 dan 52.
 
 ## Shallow merge
 
