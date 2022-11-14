@@ -36,11 +36,14 @@
 1. State harus di taro di dalam constructor.
 2. saya sudah menambahkan state pada baris 10 dan menambahkan variable human pada baris 14. Keduanya bisa di render lihat di baris 50 dan 54 pada file App.jsx.
 3. setState itu apa? memberi tahu ke React bahwa suatu component perlu dirender ulang dengan state yang diperbarui.
-4. Hati-hati, setState itu asynchronous. Untuk memastikan ketika log state yang terupdate maka perlu secondary callback, seperti di baris 41 App.jsx
+4. Hati-hati, setState itu asynchronous.
+5. constructor Jalan pertama kali, initialize statenya, kedua: render your initial component UI, ketiga Ketika kita butuh API calls lakukan di componentDidMount lifecycle. Ketika itu terjadi maka update statenya pake setState untuk memastikan componentnya sudah di update dan ketika componentnya sudah di update maka panggil render methodnya lagi untuk me render ulang UInya.
 
 # React Technical Definition
 
 1. key membantu React mengidentifikasi item mana yang telah diubah, ditambahkan, atau dihapus.
+2. Jadi componentdidMount adalah metode yang dapat kita akses dan di dalamnya ketika apa pun yang ditulis di sini akan dijalankan setiap kali komponen dipasang (mounts). Mounting adalah saat pertama kali komponen ditempatkan ke DOM, jadi reaksi pertama kali akan merender komponen ke halaman yang sedang dipasang. Ini hanya terjadi sekali sepanjang life cycle komponen.
+3. saat komponen ditempatkan ke dalam DOM adalah saat ingin membuat request API untuk sesuatu seperti get Users karena saat itulah kita ingin mendapatkan informasi sehingga dapat menampilkannya sesegera mungkin.
 
 ## Shallow merge
 
