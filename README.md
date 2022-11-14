@@ -38,6 +38,10 @@
 3. setState itu apa? memberi tahu ke React bahwa suatu component perlu dirender ulang dengan state yang diperbarui.
 4. Hati-hati, setState itu asynchronous. Untuk memastikan ketika log state yang terupdate maka perlu secondary callback, seperti di baris 41 App.jsx
 
+# React Technical Definition
+
+1. key membantu React mengidentifikasi item mana yang telah diubah, ditambahkan, atau dihapus.
+
 ## Shallow merge
 
 1. Artinya, jika suatu objek memiliki properti yang mereferensikan ke objek lain, properti objek asli dan hasil objek target akan mereferensikan objek yang sama.
