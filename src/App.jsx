@@ -18,9 +18,18 @@ class App extends Component {
       };
     });
   }
+
+  onSearchChange = (e) => {
+    this.setState(() => {
+      return { searchField: e.target.value.toLowerCase() };
+    });
+  };
+
   render() {
-    const filteredUsers = this.state.users.filter((user) => {
-      return user.name.toLowerCase().includes(this.state.searchField);
+    const { users, searchField } = this.state;
+    const { onSearchChange } = this;
+    const filteredUsers = users.filter((user) => {
+      return user.name.toLowerCase().includes(searchField);
     });
     return (
       <div className="App">
@@ -28,11 +37,7 @@ class App extends Component {
           className="search-box"
           type="search"
           placeholder="Search users"
-          onChange={(e) => {
-            this.setState(() => {
-              return { searchField: e.target.value.toLowerCase() };
-            });
-          }}
+          onChange={onSearchChange}
         />
         {filteredUsers.map((user, index) => (
           <p key={index} className="read-the-docs">
