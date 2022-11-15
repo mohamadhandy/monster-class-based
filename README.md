@@ -44,6 +44,8 @@
 1. key membantu React mengidentifikasi item mana yang telah diubah, ditambahkan, atau dihapus.
 2. Jadi componentdidMount adalah metode yang dapat kita akses dan di dalamnya ketika apa pun yang ditulis di sini akan dijalankan setiap kali komponen dipasang (mounts). Mounting adalah saat pertama kali komponen ditempatkan ke DOM, jadi reaksi pertama kali akan merender komponen ke halaman yang sedang dipasang. Ini hanya terjadi sekali sepanjang life cycle komponen.
 3. saat komponen ditempatkan ke dalam DOM adalah saat ingin membuat request API untuk sesuatu seperti get Users karena saat itulah kita ingin mendapatkan informasi sehingga dapat menampilkannya sesegera mungkin.
+4. data yang diturunkan dari komponen induk ke komponen anak.
+   Tujuan utama dari props di React adalah untuk menyediakan fungsionalitas komponen berikut: 1. Berikan data khusus ke suatu komponen. 2. Memicu perubahan state. 3. Gunakan this.props.namaProps di dalam metode render() komponen.
 
 ## Shallow merge
 
