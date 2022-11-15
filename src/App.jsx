@@ -6,7 +6,7 @@ class App extends Component {
     super();
     this.state = {
       users: [],
-      filteredUsers: [],
+      searchField: '',
     };
   }
   async componentDidMount() {
@@ -15,11 +15,13 @@ class App extends Component {
     this.setState(() => {
       return {
         users,
-        filteredUsers: users,
       };
     });
   }
   render() {
+    const filteredUsers = this.state.users.filter((user) => {
+      return user.name.toLowerCase().includes(this.state.searchField);
+    });
     return (
       <div className="App">
         <input
@@ -27,19 +29,12 @@ class App extends Component {
           type="search"
           placeholder="Search users"
           onChange={(e) => {
-            const filteredUsers = this.state.filteredUsers.filter((user) => {
-              return user.name
-                .toLowerCase()
-                .includes(e.target.value.toLowerCase());
-            });
             this.setState(() => {
-              return e.target.value.toLowerCase()
-                ? { filteredUsers }
-                : { filteredUsers: this.state.users };
+              return { searchField: e.target.value.toLowerCase() };
             });
           }}
         />
-        {this.state.filteredUsers.map((user, index) => (
+        {filteredUsers.map((user, index) => (
           <p key={index} className="read-the-docs">
             My name is {user.name} and I work at {user.company.name}
           </p>
