@@ -38,7 +38,7 @@ class App extends Component {
         <SearchBox
           onChangeHandler={onSearchChange}
           placeholder="Search Country"
-          className="search-box"
+          className="country-search-box"
         />
         <CardList countries={filteredCountries} />
       </div>
