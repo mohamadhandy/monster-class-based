@@ -5,16 +5,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      users: [],
+      countries: [],
       searchField: '',
     };
   }
   async componentDidMount() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const users = await res.json();
+    const res = await fetch('https://restcountries.com/v2/all');
+    const countries = await res.json();
     this.setState(() => {
       return {
-        users,
+        countries,
       };
     });
   }
@@ -26,22 +26,22 @@ class App extends Component {
   };
 
   render() {
-    const { users, searchField } = this.state;
+    const { countries, searchField } = this.state;
     const { onSearchChange } = this;
-    const filteredUsers = users.filter((user) => {
-      return user.name.toLowerCase().includes(searchField);
+    const filteredCountries = countries.filter((country) => {
+      return country.name.toLowerCase().includes(searchField);
     });
     return (
       <div className="App">
         <input
           className="search-box"
           type="search"
-          placeholder="Search users"
+          placeholder="Search Country"
           onChange={onSearchChange}
         />
-        {filteredUsers.map((user, index) => (
+        {filteredCountries.map((country, index) => (
           <p key={index} className="read-the-docs">
-            My name is {user.name} and I work at {user.company.name}
+            {country.name} {country.region}
           </p>
         ))}
       </div>
