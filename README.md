@@ -46,6 +46,7 @@
 3. saat komponen ditempatkan ke dalam DOM adalah saat ingin membuat request API untuk sesuatu seperti get Users karena saat itulah kita ingin mendapatkan informasi sehingga dapat menampilkannya sesegera mungkin.
 4. data yang diturunkan dari komponen induk ke komponen anak.
    Tujuan utama dari props di React adalah untuk menyediakan fungsionalitas komponen berikut: 1. Berikan data khusus ke suatu komponen. 2. Memicu perubahan state. 3. Gunakan this.props.namaProps di dalam metode render() komponen.
+5. Components dimuat ulang berdasarkan 2 kondisi. 1. ketika setState dipanggil 2. ketika props di update
 
 ## Shallow merge
 
